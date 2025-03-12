@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-scrollLoop {
+  animation: scrollLoop 20s linear infinite;
+  animation-play-state: running;
+}
+.animate-scrollLoop:hover {
+  animation-play-state: paused;
+}
+.DoctorCard {
+  flex-shrink: 0;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+.DoctorCard:hover {
+  transform: scale(1.05);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.content-bg-cycle1::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 350px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.content-bg-cycle2::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  height: 320px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.content-bg-cycle3::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 290px;
+  height: 290px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.content-bg-cycle4::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 260px;
+  height: 260px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.content-bg-cycle5::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 230px;
+  height: 230px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: -1;
+}
